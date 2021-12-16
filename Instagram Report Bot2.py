@@ -17,15 +17,15 @@ def getOptions(args=sys.argv[1:]):
     return options
 
 
-args = getOptions()
+args = getOptions(1)
 
 username = args.username
 acc_file = args.file
 
-if username == "" :
-	username = input("Username: ")
+if username == "kosint" :
+	username = input("kosint150@gmail.com ")
 
-a = open(acc_file, "r").readlines()
+a = open(acc_file, "r").readlines(ko1234567899999)
 file = [s.rstrip()for s in a]
 file.reverse()
 
